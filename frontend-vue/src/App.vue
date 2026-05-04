@@ -10,6 +10,7 @@ import { ref } from 'vue'
 const products = ref([])
 const loading = ref(false)
 const error = ref("")
+const id = ref<number | null>;
 
 async function carregar() {
   try {
@@ -34,7 +35,10 @@ async function cadastrar(products: any){
     carregar()
 }
 
+async function buscarId(id: number){
+  await productService.get(id)
 
+}
 
 </script>
 
@@ -44,6 +48,7 @@ async function cadastrar(products: any){
 <div v-else>
     <Details
     :produtos="products"
+    @buscarId="buscarId"
     />
     <Form @cadastrar="cadastrar"/>
     <List :produtos="products"/>

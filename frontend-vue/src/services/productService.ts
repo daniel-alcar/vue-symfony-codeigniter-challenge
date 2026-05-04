@@ -17,7 +17,7 @@ export const productService = {
     },
 
     async get(id: number){
-        return await api.get('/api/products/${id}')
+        return await api.get(`/api/products/${id}`)
     }
 
 }

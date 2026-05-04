@@ -2,7 +2,6 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-// erro no Intelephense//
 /**
  * @property CI_Input $input
  * @property Products_model $Products_model
@@ -95,7 +94,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 echo json_encode(
                     [
-                        'success'=>'produto cadastrado',
                         'name'=>$data['name'],
                         'description'=>$data['description'],
                         'price'=>$data['price'],
