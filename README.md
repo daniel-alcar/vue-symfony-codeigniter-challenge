@@ -70,7 +70,7 @@ Foi disponibilizado um arquivo `.sql` na pasta `/database` com a estrutura e dad
 2. Importe o arquivo `.sql`:
 
    ```
-   mysql -u root -p nome_do_banco < database.sql
+   mysql -u root -p nome_do_banco < products_db
    ```
 
 ### Configuração
