@@ -58,4 +58,27 @@ npm run dev
 - O CodeIgniter é responsável pela comunicação direta com o banco de dados MySQL
 - A comunicação entre os serviços ocorre via HTTP utilizando JSON
 
+## Banco de Dados
+
+O projeto utiliza **MySQL**.
+
+Foi disponibilizado um arquivo `.sql` na pasta `/database` com a estrutura e dados iniciais.
+
+### Como importar
+
+1. Crie um banco de dados no MySQL
+2. Importe o arquivo `.sql`:
+
+   ```
+   mysql -u root -p nome_do_banco < database.sql
+   ```
+
+### Configuração
+
+Altere as credenciais do banco no arquivo de configuração do backend:
+
+* Host: localhost
+* Usuário: root
+* Senha: sua_senha
+* Banco: nome_do_banco
 
