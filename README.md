@@ -59,5 +59,3 @@ npm run dev
 - A comunicação entre os serviços ocorre via HTTP utilizando JSON
 
 
-Agora está **100% padrão README** 👍
-```
